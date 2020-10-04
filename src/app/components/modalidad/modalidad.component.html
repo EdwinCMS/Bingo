@@ -1,14 +1,25 @@
-<div class="input-group input-group-sm mb-3 col-md-6" id="inp-modalidad">
-    <div class="input-group-prepend">
-        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+<div class="container">
+    <div class="row">
+        <div id="plus" class="col-md-1">
+            <button type="button" class="btn btn-outline-info" id="btn-arrow"><i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="input-group input-group-sm mb-3 col-md-6 justify-content-start">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Elegir modalidad</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Selecionar...</option>
+                <option value="1">LINEAL</option>
+                <option value="2">LLENO</option>
+                <option value="3">LLENO SEGUNDA</option>
+                <option value="4">FIGURA</option>
+                <option value="5">MEDIO LLENO</option>
+                <option value="6">T Y T AL REVES</option>
+            </select>
+        </div>
     </div>
-    <select class="custom-select" id="inputGroupSelect01">
-    <option selected>Choose...</option>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
-  </select>
 </div>
+
 
 <div class="container col-md-12" id="txt-añadir">
     <div class=" row justify-content-center" id="">
@@ -18,7 +29,7 @@
 
 <div class="input-group input-group-sm mb-3 col-md-6 " id="inp-nombre">
     <div class="input-group-prepend ">
-        <span class="input-group-text " id="inputGroup-sizing-sm ">Nombre</span>
+        <span class="input-group-text " id="inputGroup-sizing-sm ">Nombre de figuras</span>
     </div>
     <input type="text " class="form-control " aria-label="Sizing example input " aria-describedby="inputGroup-sizing-sm ">
 </div>
