@@ -15,6 +15,7 @@ import { BoardComponent } from './components/board/board.component';
 import { ModalidadComponent } from './components/modalidad/modalidad.component';
 import { CuadriculaComponent } from './components/cuadricula/cuadricula.component';
 import { CasillaComponent } from './components/casilla/casilla.component';
+import { CasillaEstaticaComponent } from './components/casilla-estatica/casilla-estatica.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CasillaComponent } from './components/casilla/casilla.component';
     BoardComponent,
     ModalidadComponent,
     CuadriculaComponent,
-    CasillaComponent
+    CasillaComponent,
+    CasillaEstaticaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding} from '@angular/core';
 
 @Component({
   selector: 'app-cuadricula',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cuadricula.component.sass']
 })
 export class CuadriculaComponent implements OnInit {  
-  prueba:string[];
+  prueba:string[];  
+  //@HostBinding('attr.class') cssClass = 'container';
   
   constructor() { 
     this.prueba = ['0','1','2','3','4'];    
@@ -15,9 +16,4 @@ export class CuadriculaComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  activaCuadriculaB(){
-    var b = document.getElementById('b');    //.style.backgroundColor = 'red';
-    b.classList.toggle('bg-cuadricula-activa')
-    b.classList.toggle('bg-cuadricula')
-  }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-casilla',
@@ -7,12 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CasillaComponent implements OnInit {
 @Input() casilla:string;
+@HostBinding('attr.class') cssClass = 'col-md-2';
+
 estado:boolean;
   constructor() { }
 
   ngOnInit(): void {
   }
-  activaCuadriculaA(a){
+  activaDesactivaCasilla(a:any):any{
     //var a = document.getElementById('a');    //.style.backgroundColor = 'red';
     if(a.classList.toggle('bg-cuadricula-activa')){
       this.estado = true;
