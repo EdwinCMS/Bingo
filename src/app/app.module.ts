@@ -11,6 +11,11 @@ import { NewFiguraComponent } from './components/new-figura/new-figura.component
 import { EditFiguraComponent } from './components/edit-figura/edit-figura.component';
 import { NavbarComponent } from './subs-components/navbar/navbar.component';
 import { FooterComponent } from './subs-components/footer/footer.component';
+import { BoardComponent } from './components/board/board.component';
+import { ModalidadComponent } from './components/modalidad/modalidad.component';
+import { CuadriculaComponent } from './components/cuadricula/cuadricula.component';
+import { CasillaComponent } from './components/casilla/casilla.component';
+
 
 @NgModule({
   declarations: [
@@ -22,11 +27,15 @@ import { FooterComponent } from './subs-components/footer/footer.component';
     NewFiguraComponent,
     EditFiguraComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    BoardComponent,
+    ModalidadComponent,
+    CuadriculaComponent,
+    CasillaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
