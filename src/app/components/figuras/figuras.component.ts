@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-figuras',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./figuras.component.sass']
 })
 export class FigurasComponent implements OnInit {
-
+  @Input() nombreFig:string;
   constructor() { }
 
   ngOnInit(): void {

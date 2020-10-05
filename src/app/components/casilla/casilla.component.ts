@@ -17,9 +17,10 @@ estado:boolean;
   activaDesactivaCasilla(a:any):any{
     //var a = document.getElementById('a');    //.style.backgroundColor = 'red';
     if(a.classList.toggle('bg-cuadricula-activa')){
-      this.estado = true;
+      //this.estado = true;
     }
-    if(a.classList.toggle('bg-cuadricula'))
-    this.estado = false;
+    if(a.classList.toggle('bg-cuadricula')){
+    //this.estado = false;
   }
+}
 }

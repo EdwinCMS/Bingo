@@ -1,20 +1,35 @@
-<div class="container">
-    <div class="row">
-        <app-casilla *ngFor="let x of prueba" [casilla]="x"></app-casilla>
-    </div>
-    <div class="row">
-        <app-casilla *ngFor="let x of prueba" [casilla]="x"></app-casilla>
-    </div>
-    <div class="row">
-        <app-casilla *ngFor="let x of prueba" [casilla]="x"></app-casilla>
-    </div>
-    <div class="row">
-        <app-casilla *ngFor="let x of prueba" [casilla]="x"></app-casilla>
-    </div>
-    <div class="row">
-        <app-casilla *ngFor="let x of prueba" [casilla]="x"></app-casilla>
+<div class="container col-md-12" id="txt-añadir">
+    <div class=" row justify-content-center" id="">
+        <h2 id="txt">Añadir nueva figura <span id="modalidad">{{ modalidad }}</span></h2>
     </div>
 </div>
-<div class="row justify-content-end ">
-    <button class="btn btn-primary " type="submit ">Guardar</button>
+
+<div class="container">
+    <div class="input-group input-group-sm mb-3 col-md-6" id="inp-nombre">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Nombre de figuras</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" #nombreFigura>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <app-casilla *ngFor="let x of prueba" [casilla]="x"></app-casilla>
+        </div>
+        <div class="row">
+            <app-casilla *ngFor="let x of prueba" [casilla]="x"></app-casilla>
+        </div>
+        <div class="row">
+            <app-casilla *ngFor="let x of prueba" [casilla]="x"></app-casilla>
+        </div>
+        <div class="row">
+            <app-casilla *ngFor="let x of prueba" [casilla]="x"></app-casilla>
+        </div>
+        <div class="row">
+            <app-casilla *ngFor="let x of prueba" [casilla]="x"></app-casilla>
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <button class="btn btn-primary" type="submit" *ngIf="nombreFigura.value" (click)="guardarCuadricula(nombreFigura.value)">Guardar</button>
+    </div>
 </div>

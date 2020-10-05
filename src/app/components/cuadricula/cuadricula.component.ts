@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding} from '@angular/core';
+import { Component, OnInit, HostBinding, Input} from '@angular/core';
 
 @Component({
   selector: 'app-cuadricula',
@@ -6,14 +6,20 @@ import { Component, OnInit, HostBinding} from '@angular/core';
   styleUrls: ['./cuadricula.component.sass']
 })
 export class CuadriculaComponent implements OnInit {  
-  prueba:string[];  
+  prueba:string[]; 
+  @Input() modalidad:string; 
+  
   //@HostBinding('attr.class') cssClass = 'container';
   
   constructor() { 
-    this.prueba = ['0','1','2','3','4'];    
+    this.prueba = ['0','1','2','3','4']; 
+       
     }
   
   ngOnInit(): void {
+  }
+  guardarCuadricula(x){
+    x;
   }
   
 }
