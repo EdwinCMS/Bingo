@@ -30,6 +30,8 @@
         </div>
     </div>
     <div class="row justify-content-end">
-        <button class="btn btn-primary" type="submit" *ngIf="nombreFigura.value" (click)="guardarCuadricula(nombreFigura.value)">Guardar</button>
+        <button class="btn btn-primary" type="submit" *ngIf="nombreFigura.value" (click)="guardar= true">Guardar</button>
     </div>
 </div>
+
+<app-figuras *ngIf="guardar" [guar]="guardar" [nombre]="nombreFigura.value"></app-figuras>

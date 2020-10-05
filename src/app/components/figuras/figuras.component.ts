@@ -6,7 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./figuras.component.sass']
 })
 export class FigurasComponent implements OnInit {
-  @Input() nombreFig:string;
+  @Input() guar:boolean;
+  @Input() nombre:string;
   constructor() { }
 
   ngOnInit(): void {
